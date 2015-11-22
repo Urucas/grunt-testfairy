@@ -1,0 +1,37 @@
+{
+  "name": "grunt-testfairy",
+  "version": "0.0.1",
+  "description": "Grunt task to upload app builds to testfairy",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Urucas/grunt-testfairy.git"
+  },
+  "keywords": [
+    "grunt",
+    "task",
+    "testfairy",
+    "test",
+    "builds",
+    "apk",
+    "android",
+    "ipa",
+    "ios"
+  ],
+  "author": "Urucas <hello@urucas.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Urucas/grunt-testfairy/issues"
+  },
+  "homepage": "https://github.com/Urucas/grunt-testfairy#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13"
+  },
+  "dependencies": {
+    "testfairy": "0.0.5"
+  }
+}
