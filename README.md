@@ -30,10 +30,10 @@ Upload and distribute your apk(ipa) builds to [Testfairy](https://testfairy.com/
   grunt.registerTask('default', 'testfairy');
 
 ```
-Run
-``` basb
-$ grunt testfairy:android
-```
+
+Run the task
+
+<img src="https://raw.githubusercontent.com/Urucas/grunt-testfairy/master/screen.png">
 
 #Options
 See [testfairy](https://github.com/Urucas/testfairy) module options
