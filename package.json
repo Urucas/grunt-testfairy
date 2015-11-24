@@ -6,6 +6,9 @@
   "scripts": {
     "test": "grunt"
   },
+  "files": [
+    "tasks"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Urucas/grunt-testfairy.git"
