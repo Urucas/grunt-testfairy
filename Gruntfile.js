@@ -8,7 +8,9 @@ module.exports = function(grunt) {
         options : {
           platform: "android", 
           api_key: config["api_key"],
-          file: './test.apk'
+          file: './test.apk',
+          notify: 'on',
+          groups: 'onlyme'
         }
       },
       ios: {
@@ -21,5 +23,5 @@ module.exports = function(grunt) {
     }
   })
   grunt.loadTasks('tasks')
-  grunt.registerTask('upload', 'testfairy');
+  grunt.registerTask('default', 'testfairy');
 }
