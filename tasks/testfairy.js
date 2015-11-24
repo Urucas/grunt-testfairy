@@ -1,18 +1,14 @@
 'use scrict'
-var testfairy = require('../node_modules/testfairy/dist/TestFairyUploader.js')
+var TestFairyUploader = require('../node_modules/testfairy/dist/TestFairyUploader.js')
 module.exports = function(grunt) {
   grunt.registerMultiTask('testfairy', 'Upload apps to Tesfairy', function(){
-    var done = this.async()
-    console.log(this.options())
-    /*
-    testfairy(this.options(), function(err){
-      if(err) {
-        grunt.warn(err)
-        return
-      }
-      done()
-    })
-    */
-   done()
+    grunt.log.writeln("Uploading app to testfairy");
+    var uploader = new TestFairyUploader(this.options())
+    var response = uploader.run()
+    if(response[0] != null) {
+      grunt.warn(err)
+	  return
+    }
+    console.log(response[1]);
   })
 }
