@@ -6,7 +6,8 @@ Upload and distribute your apk(ipa) builds to [Testfairy](https://testfairy.com/
 
 #Usage
 ```javascript
-  require('load-grunt-tasks')(grunt); // npm install --save-dev load-grunt-tasks
+var config = require('./config.json')
+module.exports = function(grunt) {
   grunt.initConfig({
     testfairy: {
       android: {
@@ -27,8 +28,9 @@ Upload and distribute your apk(ipa) builds to [Testfairy](https://testfairy.com/
       }
     }
   })
+  require('load-grunt-tasks')(grunt);
   grunt.registerTask('default', 'testfairy');
-
+}
 ```
 
 Run the task
